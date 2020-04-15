@@ -26,9 +26,16 @@ h1 {
   margin-top: 1rem;
 }
 
-.window {
+.window-neutral {
   width: 100%;
   position: absolute;
+  /* display: block; */
+}
+
+.window-expanded {
+  width: 100%;
+  position: absolute;
+  display: none;
 }
 
 .test {
@@ -36,14 +43,24 @@ h1 {
   margin-left: 70%;
   margin-top: 7%;
   position: absolute;
+}
 
+button {
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .p-button {
-  background-color: none;
-  padding: 2.7% 3.8% 2.7% 3.8%;
+  color: none;
+  padding: 2.6% 3.7% 2.6% 3.7%;
   cursor: pointer;
   margin-top: 52%;
   margin-left: 32.5%;
   position: absolute;
+  z-index: 999;
 }
