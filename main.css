@@ -20,3 +20,21 @@ body {
 h1 {
   font-size: 30px;
 }
+
+.center {
+  max-height: 70%;
+  margin-top: 1rem;
+}
+
+.window {
+  width: 100%;
+  position: absolute;
+}
+
+.test {
+  background-color: blue;
+  margin-left: 70%;
+  margin-top: 7%;
+  position: absolute;
+
+}
