@@ -12,6 +12,6 @@ $(document).ready(function() {
   $('.p-button').click(function() {
     $('.window-neutral').toggle();
     $('.window-expanded').toggle();
-
+    $('.p-list').toggle();
   });
 });
