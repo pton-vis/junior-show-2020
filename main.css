@@ -33,12 +33,12 @@ h1 {
 .window-neutral {
   width: 100%;
   position: absolute;
+  display: none;
 }
 
 .window-expanded {
   width: 100%;
   position: absolute;
-  display: none;
 }
 
 .p-list {
@@ -47,7 +47,6 @@ h1 {
   margin-top: 12%;
   position: absolute;
   max-height: 29vw;
-  display: none;
   overflow-y: scroll;
 }
 
