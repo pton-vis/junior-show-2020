@@ -1,8 +1,8 @@
 <?php snippet('header'); ?>
 
 <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 center">
-  <img class="window-expanded" src="/assets/img/zoom-call-expanded.png" alt="">
-  <img class="window-neutral" src="/assets/img/zoom-call.png" alt="">
+  <img class="window-expanded" src="<?= $site->url(); ?>/assets/img/zoom-call-expanded.png" alt="">
+  <img class="window-neutral" src="<?= $site->url(); ?>/assets/img/zoom-call.png" alt="">
 
   <div class="col-sm-3 offset-sm-9 p-list">
     <?php
