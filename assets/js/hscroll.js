@@ -15,3 +15,5 @@ jQuery(function ($) {
 $(document).ready(function() {
   $('.student__work__container').hScroll(30); // higher the # the faster the scroll
 });
+
+console.log('hi');
