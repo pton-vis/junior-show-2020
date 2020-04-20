@@ -29,9 +29,7 @@
       </div>
     <?php endforeach; ?>
   </div>
-
   <button class="p-button"></button>
-
 </div>
 
 <?php snippet('footer'); ?>
