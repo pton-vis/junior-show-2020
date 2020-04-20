@@ -13,9 +13,9 @@
 }
 
 /* RESET/GLOBAL */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 *,
 *:after,
@@ -263,6 +263,12 @@ button:focus {
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  .p-list {
+    max-height: 35vw;
+  }
+}
+
 @media screen and (max-width: 768px) {
   :root {
     --font-size: var(--font-size--mobile);
@@ -271,29 +277,25 @@ button:focus {
     --text-width: calc(100vw - 2 * var(--margin));
   }
 
-  .window-expanded {
+  /* .window-expanded {
     display: none;
   }
 
   .window-neutral {
     display: block;
-  }
+  } */
 
-  .p-button {
+  /* .p-button {
     pointer-events: none;
-  }
+  } */
 
   .p-list {
-    display: block;
-    top: 30vh;
-    margin: initial;
-    position: fixed;
-    max-height: 50vh;
+    max-height: 43vw;
   }
 
-  .p-link p {
+  /* .p-link p {
     color: #000;
-  }
+  } */
 
   .layout-wrapper {
     min-height: -webkit-fill-available;
@@ -308,5 +310,32 @@ button:focus {
   .student__work__item, .student__work__item img {
     min-height: initial;
     max-width: var(--text-width);
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .window-expanded {
+    display: none;
+  }
+
+  .window-neutral {
+    display: none;
+  }
+
+  .p-list {
+    display: block;
+    top: 30vh;
+    margin: initial;
+    position: fixed;
+    max-height: 50vh;
+  }
+
+  .p-link p {
+    color: #000;
+  }
+
+  .p-button {
+    pointer-events: none;
   }
 }
