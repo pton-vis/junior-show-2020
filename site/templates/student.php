@@ -30,10 +30,9 @@
   class="
     student__work__container
     layout-wrapper
-    with-color
   "
   style="
-    --text-color: <?= $page->text_color(); ?>;
+    color: <?= $page->text_color(); ?>;
     "
   >
   <div class="student__work__statement text">
@@ -98,7 +97,7 @@
   </ul>
 
 </div>
-<div class="info" style="--text-color: <?= $page->text_color(); ?>;">
+<div class="info" style="color: <?= $page->text_color(); ?>;">
   <?php foreach($page->links()->toStructure() as $link): ?>
     <?php if (($link->link_access()->toBool() && $kirby->user()) || $link->link_access()->toBool() == false): ?>
       <a href="<?=$link->link_url(); ?>"><?= $link->link_text(); ?></a>
