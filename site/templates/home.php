@@ -17,7 +17,13 @@
     ?>
     <?php foreach($sLA as $student): ?>
       <div class="p-container">
-        <a href="<?= $student['url']; ?>" class="p-link">
+        <?php
+          $url = $student['url'];
+          if ($student['content']['go_direct'] == true) {
+            $url = $student['content']['url_url'];
+          }
+        ?>
+        <a href="<?= $url; ?>" class="p-link">
           <p><?= $student['content']['title']; ?></p>
         </a>
       </div>
